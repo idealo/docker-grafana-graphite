@@ -17,7 +17,10 @@ prep :
 pull :
 	docker-compose pull
 
-up : prep pull
+build :
+	docker-compose build
+
+up : prep build
 	docker-compose up -d
 
 down :
